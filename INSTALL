@@ -1,0 +1,9 @@
+Building AFRO
+
+See doc/readme-qt.rst for instructions on building AFRO QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of AFRO.
+
+See doc/build-*.txt for instructions on building AFROd,
+the intended-for-services, no-graphical-interface, reference
+implementation of AFRO.
