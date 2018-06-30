@@ -106,6 +106,7 @@ public:
 
 		vSeeds.push_back(CDNSSeedData("0", "seed1.afrofoundation.org"));
 		vSeeds.push_back(CDNSSeedData("1", "seed2.afrofoundation.org"));
+		vSeeds.push_back(CDNSSeedData("2", "seed-backup.afrofoundation.org"));
 		convertSeeds(vFixedSeeds, pnSeed, ARRAYLEN(pnSeed), nDefaultPort);
 
 		nPoolMaxTransactions = 3;
