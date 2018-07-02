@@ -8,8 +8,8 @@
 static const unsigned int pnSeed[] =
 {
 
-    0x12822676
-	0x2d20b77c,
+    0x12822676,
+    0x23997475,
 	0x0dd25d88
 
 
