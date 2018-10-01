@@ -107,6 +107,8 @@ public:
 		vSeeds.push_back(CDNSSeedData("0", "seed1.afrofoundation.org"));
 		vSeeds.push_back(CDNSSeedData("1", "seed2.afrofoundation.org"));
 		vSeeds.push_back(CDNSSeedData("2", "seed-backup.afrofoundation.org"));
+		vSeeds.push_back(CDNSSeedData("3", "crawler1.dns.afrofoundation.org"));
+		vSeeds.push_back(CDNSSeedData("4", "crawler2.dns.afrofoundation.org"));
 		convertSeeds(vFixedSeeds, pnSeed, ARRAYLEN(pnSeed), nDefaultPort);
 
 		nPoolMaxTransactions = 3;
