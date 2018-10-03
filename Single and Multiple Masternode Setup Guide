@@ -13,13 +13,13 @@ rpcuser=ANYTHINGHERE
 rpcpassword=ANYTHINGHERE
 rpcallowip=127.0.0.1
 externalip=your_vps_ip_address
-rpcport=5118
+rpcport=32516
 listen=1
 server=1
 daemon=1
-port=5118
+port=22516
 masternode=1
-masternodeaddr=YourIP:5118
+masternodeaddr=YourIP:22516
 masternodeprivkey=PRIVATEKEYREPLACETHIS
 
 
@@ -71,13 +71,13 @@ rpcuser=ANYTHINGHERE
 rpcpassword=ANYTHINGHERE
 rpcallowip=127.0.0.1
 externalip=your_vps_ip_address
-rpcport=5118
+rpcport=32516
 listen=1
 server=1
 daemon=1
-port=5118
+port=22516
 masternode=1
-masternodeaddr=YourIP:5118
+masternodeaddr=YourIP:22516
 masternodeprivkey=PRIVATEKEYREPLACETHIS
 
 8.Now save and close the config file.
