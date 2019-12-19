@@ -56,7 +56,7 @@ uint64_t nLocalHostNonce = 0;
 static std::vector<SOCKET> vhListenSocket;
 CAddrMan addrman;
 std::string strSubVersion;
-int nMaxConnections = GetArg("-maxconnections", 125);
+int nMaxConnections = GetArg("-maxconnections", 500);
 
 vector<CNode*> vNodes;
 CCriticalSection cs_vNodes;
@@ -786,6 +786,7 @@ static list<CNode*> vNodesDisconnected;
 
 void ThreadSocketHandler()
 {
+	LogPrintf("Max connections: %i\n", nMaxConnections);
     unsigned int nPrevNodeCount = 0;
     while (true)
     {
@@ -965,6 +966,7 @@ void ThreadSocketHandler()
             }
             else if (nInbound >= nMaxConnections - MAX_OUTBOUND_CONNECTIONS)
             {
+                LogPrintf("Inbound connection from %s dropped. nInbound is %i, which is more than (nMaxConnections - MAX_OUTBOUND_CONNECTIONS), respectively %i and %i\n", addr.ToString(), nInbound, nMaxConnections, MAX_OUTBOUND_CONNECTIONS);
                 closesocket(hSocket);
             }
             else if (CNode::IsBanned(addr))
